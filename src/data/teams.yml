@@ -1,0 +1,32 @@
+teams:
+- name: Product Management
+  shortDescription: TODO
+  position:
+    x: 0
+    y: 0
+- name: Company Administration
+  shortDescription: TODO
+  position:
+    x: 2
+    y: 0
+- name: Core
+  shortDescription: TODO
+  position:
+    x: 1
+    y: 1
+- name: Customer Care
+  shortDescription: TODO
+  position:
+    x: 0
+    y: 2
+- name: Engineering
+  shortDescription: Develops and operates our cloud services
+  position:
+    x: 1
+    y: 2
+- name: Site Reliability Engineering
+  shortDescription: TODO
+  position:
+    x: 2
+    y: 2
+
