@@ -26,7 +26,7 @@ export class App extends React.Component<{}, { teams: ITeam[] }> {
     for (let y = 0; y <= maxY; y++) {
       const horizontalStack = [];
       for (let x = 0; x <= maxX; x++) {
-        const filteredTeams = teams.filter(t => t.position.x == x && t.position.y == y);
+        const filteredTeams = teams.filter(t => t.position.x === x && t.position.y === y);
         if (filteredTeams.length) {
           const team = filteredTeams[0];
           horizontalStack.push(<TeamCard team={team} key={team.shortName} />);

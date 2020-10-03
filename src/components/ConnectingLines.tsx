@@ -31,7 +31,7 @@ export class ConnectingLines extends React.Component<IConnectingLinesProps> {
         return (
             <div>
                 {this.props.teams.filter(team => team.reportsTo).map(team => {
-                    var connectedTeam = this.props.teams.filter(x => x.shortName == team.reportsTo)[0];
+                    var connectedTeam = this.props.teams.filter(x => x.shortName === team.reportsTo)[0];
                     const [fromAnchor, toAnchor] = this.getAnchorPosition(team, connectedTeam);
                     return <LineTo from={team.shortName} to={team.reportsTo!} delay={100} fromAnchor={fromAnchor} toAnchor={toAnchor} borderColor='darkgray' key={'line-' + team.shortName} />;
                 })}
