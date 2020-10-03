@@ -1,54 +1,59 @@
-import React, { CSSProperties } from 'react';
-import { Stack, DocumentCard, Text, Link, FontWeights } from 'office-ui-fabric-react';
-import { Card, ICardTokens, ICardSectionStyles, ICardSectionTokens } from '@uifabric/react-cards';
-import LineTo, { Line } from 'react-lineto';
-import { Team } from './components/Team';
+import React from 'react';
+import { Stack, Image } from 'office-ui-fabric-react';
+import { TeamCard } from './components/TeamCard';
 import { Placeholder } from './components/Placeholder';
+import { TeamService } from './services/TeamService';
+import { ConnectingLines } from './components/ConnectingLines';
 
 
 export const App: React.FunctionComponent = () => {
-  const cardTokens: ICardTokens = { childrenMargin: 12 };
-  const hiddenStyle: CSSProperties = { visibility: 'hidden' };
-  const cardStyle: CSSProperties = { zIndex: 100 };
+
+  const teamService = new TeamService();
+  const teams = teamService.get();
+
+  const maxX = teams.reduce((oa, u) => Math.max(oa, u.position.x), 0);
+  const maxY = teams.reduce((oa, u) => Math.max(oa, u.position.y), 0);
+
+  const stacks = [];
+  for (let y = 0; y <= maxY; y++) {
+    const horizontalStack = [];
+    for (let x = 0; x <= maxX; x++) {
+      const filteredTeams = teams.filter(t => t.position.x == x && t.position.y == y);
+      if (filteredTeams.length) {
+        const team = filteredTeams[0];
+        horizontalStack.push(<TeamCard team={team} key={team.shortName} />);
+      }
+      else {
+        horizontalStack.push(<Placeholder key={"placeholder" + x.toString() + y.toString()} />);
+      }
+    }
+    stacks.push(horizontalStack);
+  }
+
+  const logoUrl = `${process.env.PUBLIC_URL}/images/logo.png`;
+
   return (
-    <div>
-      <Stack
-        horizontalAlign="center"
-        verticalAlign="center"
-        verticalFill
-        styles={{
-          root: {
-            width: '960px',
-            margin: '0 auto',
-            textAlign: 'center',
-            color: '#605e5c'
-          }
-        }}
-        gap={50}
-      >
-        <Stack horizontal gap={50} horizontalAlign="center">
-          <Team name='Product Management' shortName='PM' />
-          <Placeholder />
-          <Team name='Company Administration' shortName='CA' />
-        </Stack>
-
-        <Stack horizontal gap={50} horizontalAlign="center">
-          <Placeholder />
-          <Team name='Core' shortName='Core' />
-          <Placeholder />
-        </Stack>
-
-        <Stack horizontal gap={50} horizontalAlign="center">
-          <Team name='Customer Care' shortName='CC' />
-          <Team name='Engineering' shortName='Eng' />
-          <Team name='Site Reliability Engineering' shortName='SRE' />
-        </Stack>
-      </Stack>
-      <LineTo from="Core" to="CC" delay={0} fromAnchor='bottom' toAnchor='top' borderColor='black' />
-      <LineTo from="Core" to="SRE" delay={0} fromAnchor='bottom' toAnchor='top' borderColor='black' />
-      <LineTo from="Core" to="Eng" delay={0} fromAnchor='bottom' toAnchor='top' borderColor='black' />
-      <LineTo from="Core" to="PM" delay={0} fromAnchor='top' toAnchor='bottom' borderColor='black' />
-      <LineTo from="Core" to="CA" delay={0} fromAnchor='top' toAnchor='bottom' borderColor='black' />
-    </div>
+    <Stack
+      horizontalAlign="center"
+      verticalAlign="center"
+      verticalFill
+      styles={{
+        root: {
+          minWidth: '1140px',
+          margin: '0 auto',
+          textAlign: 'center',
+          color: '#605e5c'
+        }
+      }}
+      gap={70}
+    >
+      <Image src={logoUrl} alt='Company logo' />
+      {
+        stacks.map((items, i) => <Stack horizontal gap={50} horizontalAlign="center" key={"stack" + i}>
+          {items}
+        </Stack>)
+      }
+      <ConnectingLines teams={teams} />
+    </Stack>
   );
 };

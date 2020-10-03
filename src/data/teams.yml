@@ -1,32 +1,118 @@
 teams:
-- name: Product Management
-  shortDescription: TODO
+- name: Product Management Team
+  shortName: PM
+  shortDescription: Requirements engineering, product channels & policies, and marketing.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  reportsTo: Management
+  imageUrl: 
   position:
     x: 0
     y: 0
-- name: Company Administration
-  shortDescription: TODO
+  members:
+  - name: Chien-Shiung Wu
+    role: Product Manager
+  - name: Neelam Arroyo
+    role: Junior Product Manager
+
+- name: Office Administration Team
+  shortName: CA
+  shortDescription: Managing our offices, coordinating location-overlapping topics, etc.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  reportsTo: Management
+  imageUrl: 
   position:
     x: 2
     y: 0
-- name: Core
-  shortDescription: TODO
+  members:
+  - name: Adaline Rowe
+    role: Office Manager
+  - name: Oliver Clements
+    role: Assistant
+
+- name: Management Team
+  shortName: Management
+  shortDescription: Defining mission, vision, and strategies. Taking care of company-overarching topics like HR and organizational policies.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  imageUrl: 
   position:
     x: 1
     y: 1
-- name: Customer Care
-  shortDescription: TODO
+  members:
+  - name: Gertrude B. Elion
+    role: CEO
+  - name: Shayaan Chase
+    role: COO
+  - name: Bushra Chan
+    role: HR Manager
+
+- name: Customer Service Team
+  shortName: CS
+  shortDescription: The direct customer interface. Sales, support, national and international market communication.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  reportsTo: Management
+  imageUrl: 
   position:
     x: 0
     y: 2
-- name: Engineering
-  shortDescription: Develops and operates our cloud services
+  members:
+  - name: Hiba Blanchard
+    role: Customer Service Engineer
+  - name: Ayyub Dudley
+    role: Customer Service Engineer
+  - name: Kerry Steadman
+    role: Customer Service Engineer
+
+- name: Development Team
+  shortName: Eng
+  shortDescription: Developing and maintaining our products and services.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  reportsTo: Management
+  slackChannelId: C0123456789
+  slackTeamId: T01234567
+  imageUrl: 
   position:
     x: 1
     y: 2
-- name: Site Reliability Engineering
-  shortDescription: TODO
+  members:
+  - name: Abbie Hancock
+    role: Product Owner
+  - name: Daanish Stubbs
+    role: Scrum Master
+  - name: Umaiza Paul
+    role: Software Engineer
+  - name: Tom Schmiedlechner
+    role: Software Engineer
+    imageUrl: /images/people/TS.png
+
+- name: Operations Team
+  shortName: Ops
+  shortDescription: IT, cloud infrastructure, service operation, and process automation.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  reportsTo: Management
+  slackChannelId: C1123456789
+  slackTeamId: T11234567
+  imageUrl: 
   position:
     x: 2
     y: 2
-
+  members:
+  - name: Jasmine Lord
+    role: IT Administrator
