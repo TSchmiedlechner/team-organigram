@@ -91,6 +91,7 @@ teams:
   members:
   - name: Abbie Hancock
     role: Product Owner
+    email: abbie.hancock@sample.org
   - name: Daanish Stubbs
     role: Scrum Master
   - name: Umaiza Paul

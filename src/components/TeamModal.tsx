@@ -60,6 +60,13 @@ export const TeamModal: React.FunctionComponent<ITeamModalProps> = ({ team, isOp
         }
     };
 
+    const personaWithEmailStyle: Partial<IPersonaStyles> = {
+        root: {
+            margin: '10px 5px',
+            cursor: "pointer"
+        }
+    };
+
     const slackLinkStyle: Partial<IImageStyles> = {
         root: {
             marginRight: 10
@@ -103,8 +110,11 @@ export const TeamModal: React.FunctionComponent<ITeamModalProps> = ({ team, isOp
                                 size={PersonaSize.size48}
                                 text={member.name}
                                 secondaryText={member.role}
+                                onClick={() => window.location.href = `mailto:${member.email}`}
+                                title={member.email ? member.email : undefined}
+                                tertiaryText={member.email}
                                 imageAlt={member.name}
-                                styles={personaStyle}
+                                styles={member.email ? personaWithEmailStyle : personaStyle}
                                 imageUrl={member.imageUrl ? process.env.PUBLIC_URL + member.imageUrl : undefined}
                             />
                         )
