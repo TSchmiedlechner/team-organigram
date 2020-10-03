@@ -1,5 +1,4 @@
 import { ITeam } from "../models/ITeam";
-import raw from "raw.macro";
 import yaml from 'js-yaml';
 
 interface ImportedYaml {
@@ -8,10 +7,11 @@ interface ImportedYaml {
 
 export class TeamService {
 
-    get(): ITeam[] {
-        const yamlContent = raw("../data/teams.yml");
-        const importedYaml = yaml.safeLoad(yamlContent) as ImportedYaml;
-        
+    async getAsync(): Promise<ITeam[]> {
+        const response = await fetch(`${process.env.PUBLIC_URL}/data/teams.yml`);
+        const body = await response.text();
+        const importedYaml = yaml.safeLoad(body) as ImportedYaml;
+
         return importedYaml.teams;
     }
 }
