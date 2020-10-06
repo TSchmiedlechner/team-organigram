@@ -93,13 +93,15 @@ export const TeamModal: React.FunctionComponent<ITeamModalProps> = ({ team, isOp
             </div>
             <div className={contentStyles.body}>
                 <p style={{ fontStyle: 'italic' }}>{team.shortDescription}</p>
-                <p>{team.description}</p>
                 {team.slackTeamId && team.slackChannelId &&
                     <DefaultButton allowDisabledFocus href={slackLink}>
                         <Image src={require('../images/slack.png')} alt='Contact us via Slack' width={20} styles={slackLinkStyle} />
                         <span>Contact us via Slack</span>
                     </DefaultButton>
                 }
+                
+                <h4>Tasks &amp; Responsibilities</h4>
+                <div dangerouslySetInnerHTML={{__html: team.description!}}></div>
 
                 <h4>Team Members</h4>
                 <Stack horizontal wrap>
