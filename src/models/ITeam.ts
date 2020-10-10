@@ -4,8 +4,9 @@ import { ITeamPosition } from "./ITeamPosition";
 export interface ITeam {
     name: string;
     shortName: string;
-    description?: string;
     shortDescription: string;
+    description?: string;
+    roleDescription?: string;
     members: ITeamMember[],
     position: ITeamPosition,
     slackChannelName?: string,
