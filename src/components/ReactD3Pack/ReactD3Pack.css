@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    paint-order: stroke;
+}
+
+text {
+    font-size: 9px;
+    font-weight: 600;
+    pointer-events: none;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px #fff;
+}
+
+text.parent {
+    font-size: 16px;
+    fill: #1f77b4;
+}
+
+circle {
+    fill: #ffffff;
+    /*stroke: #999;*/
+    pointer-events: all;
+    cursor: pointer;
+}
+
+circle.parent {
+    fill: rgba(70, 128, 179, 0.781);
+    fill-opacity: .1;
+    /*stroke: steelblue;*/
+}
+
+circle.parent:hover {
+    stroke: #73adde;
+    stroke-width: .5px;
+}
+
+circle.child {
+    pointer-events: none;
+}
+
+.title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.team-owner {
+    stroke: green;
+    stroke-width: 3px;
+}
+
+.product-owner {
+    stroke: DodgerBlue;
+    stroke-width: 3px;
+}

@@ -1,0 +1,131 @@
+orgName: Circle Ltd
+orgShortDescription: "To be the least square company in the world!"
+orgDescription: |
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+  At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+  Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+teams:
+- name: Core Team
+  shortDescription: Defining mission, vision, and strategies. Taking care of company-overarching topics like HR and organizational policies.
+  description: |
+    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  roleDescription: |
+    <ul>
+      <li><b>CEO:</b> Lorem ipsum...</li>
+      <li><b>COO:</b> Lorem ipsum...</li>
+      <li><b>Head of Talent:</b> Lorem ipsum...</li>
+    </ul>
+  imageUrl: 
+  members:
+  - name: Gertrude B. Elion
+    role: CEO
+    isTeamOwner: true
+  - name: Shayaan Chase
+    role: COO
+    isProductOwner: true
+  - name: Bushra Chan
+    role: Head of Talent
+  
+  teams:
+  - name: Product Management Team
+    shortDescription: Requirements engineering, product channels & policies, and marketing.
+    description: |
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    imageUrl: 
+    members:
+    - name: Chien-Shiung Wu
+      role: Product Manager
+    - name: Neelam Arroyo
+      role: Junior Product Manager
+
+  - name: Office Administration Team
+    shortDescription: Managing our offices, coordinating location-overlapping topics, etc.
+    description: |
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    imageUrl: 
+    members:
+    - name: Adaline Rowe
+      role: Office Manager
+    - name: Oliver Clements
+      role: Assistant
+
+  - name: Customer Service Team
+    shortDescription: The direct customer interface. Sales, support, national and international market communication.
+    description: |
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    imageUrl: 
+    members:
+    - name: Hiba Blanchard
+      role: Head of Customer Service
+    teams:
+    - name: Customer Service North
+      shortDescription: Representing the customer service team for the North region
+      description: |
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      imageUrl: 
+      members:
+      - name: Ayyub Dudley
+        role: Customer Service Engineer
+      - name: Kerry Steadman
+        role: Customer Service Engineer
+    - name: Customer Service South
+      shortDescription: Representing the customer service team for the South region
+      description: |
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      imageUrl: 
+      members:
+      - name: Ayyub Dudley
+        role: Customer Service Engineer
+      - name: Kerry Steadman
+        role: Customer Service Engineer
+
+  - name: Development Team
+    shortDescription: Developing and maintaining our products and services.
+    description: |
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    slackChannelId: C0123456789
+    slackTeamId: T01234567
+    imageUrl: 
+    members:
+    - name: Abbie Hancock
+      role: Product Owner
+      isTeamOwner: true
+      isProductOwner: true
+      email: abbie.hancock@sample.org
+    - name: Daanish Stubbs
+      role: Scrum Master
+    - name: Umaiza Paul
+      role: Software Engineer
+    - name: Tom Schmiedlechner
+      role: Software Engineer
+      imageUrl: /images/people/TS.png
+
+  - name: Operations Team
+    shortDescription: IT, cloud infrastructure, service operation, and process automation.
+    description: |
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+      At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+      Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    slackChannelId: C1123456789
+    slackTeamId: T11234567
+    imageUrl: 
+    members:
+    - name: Jasmine Lord
+      role: IT Administrator
+    - name: Mike Johnson
+      role: IT Administrator

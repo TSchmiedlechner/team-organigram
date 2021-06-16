@@ -1,0 +1,28 @@
+.parent-container {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.legend-item {
+    padding: 0.5rem 1rem;
+    text-align: middle;
+    vertical-align: middle;
+}
+
+.legend-item-text {
+    line-height: 24px;
+    vertical-align: middle;
+}
+
+.legend-item-color {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.legend-label-container {
+    padding-bottom: 0!important;
+}
+
+.legend-label {
+    text-align: center;
+}

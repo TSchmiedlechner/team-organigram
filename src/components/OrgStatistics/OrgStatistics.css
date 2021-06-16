@@ -1,0 +1,9 @@
+.statistic-container {
+    padding: 1rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.statistic-container p {
+    margin-bottom: 0;
+}
